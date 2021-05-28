@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(#0052d4, #65c7f7, #9cecfb);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comic Neue", cursive;
+}
+.container {
+  min-height: 180px;
+  min-width: 400px;
+}
+.upper {
+  font-size: 30px;
+  text-align: center;
+  color: #832161;
+  padding: 20px 20px 0px 20px;
+  margin: 0px 10px 0px 10px;
+  letter-spacing: 5px;
+}
+.middle {
+  text-align: center;
+  font-size: 90px;
+  margin: 30px;
+  color: hsl(237, 12%, 33%);
+}
+.lower {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  padding: 5px;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  border: 2px solid white;
+  /* background: #1d8a99; */
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+}
+@media (max-width: 800px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+  .container {
+    min-height: 50vh;
+    min-width: 360px;
+  }
+}
+.footer span {
+  font-family: "Mate SC", serif;
+  font-weight: 1000;
+  color: #223127;
+}
